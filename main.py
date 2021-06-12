@@ -1,50 +1,28 @@
-# Program make a simple calculator
+print("Welcome to Sujal's Unit Converter")
+cal = input("Which category would you like to convert? we support length(l) and Weight(w):  ")
 
-# This function adds two numbers
+if cal == "l":
+    unit1 = input("Which unit would you like to convert from: ")
+    unit2 = input("Which unit would you like to convert to: ")
+    num1 = input("Enter your value: ")
+
+    if unit1 == "cm" and unit2 == "m":
+        ans = float(num1) / 100
+    elif unit1 == "mm" and unit2 == "cm":
+        ans = float(num1) / 10
+    elif unit1 == "m" and unit2 == "cm":
+        ans = float(num1) * 100
+    elif unit1 == "cm" and unit2 == "mm":
+        ans = float(num1) * 10
+    elif unit1 == "mm" and unit2 == "m":
+        ans = float(num1) / 1000
+    elif unit1 == "m" and unit2 == "mm":
+        ans = float(num1) * 1000
+    elif unit1 == "km" and unit2 == "m":
+        ans = float(num1) * 1000
+    elif unit1 == "m" and unit2 == "km":
+        ans = float(num1) / 1000
+    elif unit1 == "mm" and unit2 == "km":
+        ans = float(num1) / 1000000
 
 
-def add(x, y):
-    return x + y
-
-# This function subtracts two numbers
-
-
-def subtract(x, y):
-    return x - y
-
-# This function multiplies two numbers
-
-
-def multiply(x, y):
-    return x * y
-
-# This function divides two numbers
-
-
-def divide(x, y):
-    return x / y
-
-
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-
-while True:
-    # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
-
-    # Check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
-        if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
-
-        elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
-
-        elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
