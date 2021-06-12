@@ -42,9 +42,12 @@ if cal == "w":
         ans = float(num1) * 1000
     elif unit1 == "g" and unit2 == "kg":
         ans = float(num1) / 1000
-    elif unit1 == "km" and unit2 == "m":
-        ans = float(num1) * 1000
-    elif unit1 == "m" and unit2 == "km":
-        ans = float(num1) / 1000
-    elif unit1 == "mm" and unit2 == "km":
-        ans = float(num1) / 1000000
+    elif unit1 == "lb" and unit2 == "g":
+        ans = float(num1) * 454
+    elif unit1 == "g" and unit2 == "lb":
+        ans = float(num1) / 454
+    elif unit1 == "oz" and unit2 == "lb":
+        ans = float(num1) / 16
+    elif unit1 == "lb" and unit2 == "oz":
+        ans = float(num1) * 16
+
