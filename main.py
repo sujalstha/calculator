@@ -43,24 +43,34 @@ if cal == "w":
     num1 = input("Enter the value of the unit: ")
     if unit1 == "kg" and unit2 == "lb":
         ans = float(num1) * 2.205
+        print(ans)
     elif unit1 == "lb" and unit2 == "kg":
         ans = float(num1) / 2.205
+        print(ans)
     elif unit1 == "oz" and unit2 == "g":
         ans = float(num1) * 28.35
+        print(ans)
     elif unit1 == "g" and unit2 == "oz":
         ans = float(num1) / 28.35
+        print(ans)
     elif unit1 == "kg" and unit2 == "g":
         ans = float(num1) * 1000
+        print(ans)
     elif unit1 == "g" and unit2 == "kg":
         ans = float(num1) / 1000
+        print(ans)
     elif unit1 == "lb" and unit2 == "g":
         ans = float(num1) * 454
+        print(ans)
     elif unit1 == "g" and unit2 == "lb":
         ans = float(num1) / 454
+        print(ans)
     elif unit1 == "oz" and unit2 == "lb":
         ans = float(num1) / 16
+        print(ans)
     elif unit1 == "lb" and unit2 == "oz":
         ans = float(num1) * 16
+        print(ans)
     else:
         print("Conversion not available yet")
 
