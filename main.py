@@ -8,22 +8,33 @@ if cal == "l":
 
     if unit1 == "cm" and unit2 == "m":
         ans = float(num1) / 100
+        print(ans)
     elif unit1 == "mm" and unit2 == "cm":
         ans = float(num1) / 10
+        print(ans)
     elif unit1 == "m" and unit2 == "cm":
         ans = float(num1) * 100
+        print(ans)
     elif unit1 == "cm" and unit2 == "mm":
         ans = float(num1) * 10
+        print(ans)
     elif unit1 == "mm" and unit2 == "m":
         ans = float(num1) / 1000
+        print(ans)
     elif unit1 == "m" and unit2 == "mm":
         ans = float(num1) * 1000
+        print(ans)
     elif unit1 == "km" and unit2 == "m":
         ans = float(num1) * 1000
+        print(ans)
     elif unit1 == "m" and unit2 == "km":
         ans = float(num1) / 1000
+        print(ans)
     elif unit1 == "mm" and unit2 == "km":
         ans = float(num1) / 1000000
+        print(ans)
+    else:
+        print("Conversion not available yet")
 
 
 if cal == "w":
@@ -50,4 +61,6 @@ if cal == "w":
         ans = float(num1) / 16
     elif unit1 == "lb" and unit2 == "oz":
         ans = float(num1) * 16
+    else:
+        print("Conversion not available yet")
 
