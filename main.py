@@ -1,10 +1,14 @@
+## Title Print
 print("Welcome to Sujal's Unit Converter")
+
+## User input or either length category or weight category
 cal = input("Which category would you like to convert? we support length(l) and Weight(w):  ")
 
+## if statement, if the the input was the length
 if cal == "l":
-    unit1 = input("Which unit would you like to convert from: ")
-    unit2 = input("Which unit would you like to convert to: ")
-    num1 = input("Enter the value of the unit: ")
+    unit1 = input("Which unit would you like to convert from: ")  ## The starting unit input
+    unit2 = input("Which unit would you like to convert to: ")  ## The ending unit input
+    num1 = input("Enter the value of the unit: ")  ## The value of the input
 
     if unit1 == "cm" and unit2 == "m":
         ans = float(num1) / 100
@@ -35,7 +39,6 @@ if cal == "l":
         print(ans)
     else:
         print("Conversion not available yet")
-
 
 if cal == "w":
     unit1 = input("Which unit would you like to convert from: ")
@@ -73,4 +76,3 @@ if cal == "w":
         print(ans)
     else:
         print("Conversion not available yet")
-
