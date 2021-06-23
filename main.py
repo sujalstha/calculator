@@ -45,35 +45,35 @@ while cal == "w":
     unit1 = input("Which unit would you like to convert from: ")  # The starting unit input
     unit2 = input("Which unit would you like to convert to: ")  # The ending unit input
     num1 = input("Enter the value of the unit: ")  # The value of the input
-    if unit1 == "kg" and unit2 == "lb":
-        ans = float(num1) * 2.205
+    if unit1 == "kg" and unit2 == "lb":  # kg to lb
+        ans = float(num1) * 2.205  # formula
         print(ans)
-    elif unit1 == "lb" and unit2 == "kg":
-        ans = float(num1) / 2.205
+    elif unit1 == "lb" and unit2 == "kg":  # lb to kg
+        ans = float(num1) / 2.205  # formula
         print(ans)
-    elif unit1 == "oz" and unit2 == "g":
-        ans = float(num1) * 28.35
+    elif unit1 == "oz" and unit2 == "g":  # oz to g
+        ans = float(num1) * 28.35  # formula
         print(ans)
-    elif unit1 == "g" and unit2 == "oz":
-        ans = float(num1) / 28.35
+    elif unit1 == "g" and unit2 == "oz":  # g to oz
+        ans = float(num1) / 28.35  # formula
         print(ans)
-    elif unit1 == "kg" and unit2 == "g":
-        ans = float(num1) * 1000
+    elif unit1 == "kg" and unit2 == "g":  # kg to g
+        ans = float(num1) * 1000  # formula
         print(ans)
-    elif unit1 == "g" and unit2 == "kg":
-        ans = float(num1) / 1000
+    elif unit1 == "g" and unit2 == "kg":  # g to kg
+        ans = float(num1) / 1000  # formula
         print(ans)
-    elif unit1 == "lb" and unit2 == "g":
-        ans = float(num1) * 454
+    elif unit1 == "lb" and unit2 == "g":  # lb to g
+        ans = float(num1) * 454  # formula
         print(ans)
-    elif unit1 == "g" and unit2 == "lb":
-        ans = float(num1) / 454
+    elif unit1 == "g" and unit2 == "lb":  # g to lb
+        ans = float(num1) / 454  # formula
         print(ans)
-    elif unit1 == "oz" and unit2 == "lb":
-        ans = float(num1) / 16
+    elif unit1 == "oz" and unit2 == "lb":  # oz to lb
+        ans = float(num1) / 16  # formula
         print(ans)
-    elif unit1 == "lb" and unit2 == "oz":
-        ans = float(num1) * 16
+    elif unit1 == "lb" and unit2 == "oz":  # lb to oz
+        ans = float(num1) * 16  # formula
         print(ans)
     else:  # if input is invalid, ask the user again because of the while loop
         print("Conversion not available yet")
