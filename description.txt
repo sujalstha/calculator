@@ -1,20 +1,3 @@
 # Created 6/10/2021
 # Conversion Calculator by [Sujal Shrestha]
 
-(6-7 line) add function taking two parameter does x+y
-
-(12-13 line) subtract function taking two parameter does x-y
-
-(18-19 line) multiply function taking two parameter does x/y
-
-(2-25 line) divide function taking two parameter does x/y
-
-(28-32 line) print functions to display which number does what operation 
-
-(34 line) forever while loop
-
-(35 line) user input asking for 1/2/3/4
-
-(40- 41 line) user input asking for the two number that are going be either added, subtracted, multiply or divided
-
-(43-50 line) if and elif choices to call the functions necessary according to the user input done in line 35
