@@ -23,19 +23,19 @@ if cal == "l":
         ans = float(num1) * 10  # formula
         print(ans)
     elif unit1 == "mm" and unit2 == "m":  # mm to m
-        ans = float(num1) / 1000
+        ans = float(num1) / 1000  # formula
         print(ans)
     elif unit1 == "m" and unit2 == "mm":  # m to mm
-        ans = float(num1) * 1000
+        ans = float(num1) * 1000  # formula
         print(ans)
     elif unit1 == "km" and unit2 == "m":  # km to m
-        ans = float(num1) * 1000
+        ans = float(num1) * 1000  # formula
         print(ans)
     elif unit1 == "m" and unit2 == "km":  # m to km
-        ans = float(num1) / 1000
+        ans = float(num1) / 1000  # formula
         print(ans)
     elif unit1 == "mm" and unit2 == "km":  # mm to km
-        ans = float(num1) / 1000000
+        ans = float(num1) / 1000000  # formula
         print(ans)
     else:
         print("Conversion not available yet")
