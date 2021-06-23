@@ -6,35 +6,35 @@ cal = input("Which category would you like to convert? we support length(l) and 
 
 ## if statement, if the the input was the length
 if cal == "l":
-    unit1 = input("Which unit would you like to convert from: ")  ## The starting unit input
-    unit2 = input("Which unit would you like to convert to: ")  ## The ending unit input
-    num1 = input("Enter the value of the unit: ")  ## The value of the input
+    unit1 = input("Which unit would you like to convert from: ")  # The starting unit input
+    unit2 = input("Which unit would you like to convert to: ")  # The ending unit input
+    num1 = input("Enter the value of the unit: ")  # The value of the input
 
-    if unit1 == "cm" and unit2 == "m":
-        ans = float(num1) / 100
+    if unit1 == "cm" and unit2 == "m":  # cm to m
+        ans = float(num1) / 100  # formula
         print(ans)
-    elif unit1 == "mm" and unit2 == "cm":
-        ans = float(num1) / 10
+    elif unit1 == "mm" and unit2 == "cm":  # mm to cm
+        ans = float(num1) / 10  # formula
         print(ans)
-    elif unit1 == "m" and unit2 == "cm":
-        ans = float(num1) * 100
+    elif unit1 == "m" and unit2 == "cm":  # m to cm
+        ans = float(num1) * 100  # formula
         print(ans)
-    elif unit1 == "cm" and unit2 == "mm":
-        ans = float(num1) * 10
+    elif unit1 == "cm" and unit2 == "mm":  # cm to mm
+        ans = float(num1) * 10  # formula
         print(ans)
-    elif unit1 == "mm" and unit2 == "m":
+    elif unit1 == "mm" and unit2 == "m":  # mm to m
         ans = float(num1) / 1000
         print(ans)
-    elif unit1 == "m" and unit2 == "mm":
+    elif unit1 == "m" and unit2 == "mm":  # m to mm
         ans = float(num1) * 1000
         print(ans)
-    elif unit1 == "km" and unit2 == "m":
+    elif unit1 == "km" and unit2 == "m":  # km to m
         ans = float(num1) * 1000
         print(ans)
-    elif unit1 == "m" and unit2 == "km":
+    elif unit1 == "m" and unit2 == "km":  # m to km
         ans = float(num1) / 1000
         print(ans)
-    elif unit1 == "mm" and unit2 == "km":
+    elif unit1 == "mm" and unit2 == "km":  # mm to km
         ans = float(num1) / 1000000
         print(ans)
     else:
