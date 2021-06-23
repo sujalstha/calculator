@@ -4,8 +4,8 @@ print("Welcome to Sujal's Unit Converter")
 ## User input or either length category or weight category
 cal = input("Which category would you like to convert? we support length(l) and Weight(w):  ")
 
-## if statement, if the the input was the length
-if cal == "l":
+## while statement, if the the input was the Length(l) run it
+while cal == "l":
     unit1 = input("Which unit would you like to convert from: ")  # The starting unit input
     unit2 = input("Which unit would you like to convert to: ")  # The ending unit input
     num1 = input("Enter the value of the unit: ")  # The value of the input
@@ -37,13 +37,14 @@ if cal == "l":
     elif unit1 == "mm" and unit2 == "km":  # mm to km
         ans = float(num1) / 1000000  # formula
         print(ans)
-    else:
+    else:  # if input is invalid, ask the user again because of the while loop
         print("Conversion not available yet")
 
-if cal == "w":
-    unit1 = input("Which unit would you like to convert from: ")
-    unit2 = input("Which unit would you like to convert to: ")
-    num1 = input("Enter the value of the unit: ")
+## while statement, if the the input was the Weight(w) run it
+while cal == "w":
+    unit1 = input("Which unit would you like to convert from: ")  # The starting unit input
+    unit2 = input("Which unit would you like to convert to: ")  # The ending unit input
+    num1 = input("Enter the value of the unit: ")  # The value of the input
     if unit1 == "kg" and unit2 == "lb":
         ans = float(num1) * 2.205
         print(ans)
@@ -74,5 +75,5 @@ if cal == "w":
     elif unit1 == "lb" and unit2 == "oz":
         ans = float(num1) * 16
         print(ans)
-    else:
+    else:  # if input is invalid, ask the user again because of the while loop
         print("Conversion not available yet")
